@@ -17,8 +17,8 @@ def main():
                     urls_old.index(urls)
                 except ValueError:
                    webbrowser.open(urls)
-                   running = False
-        if iterations%20 == 0:
+            running = False
+        if iterations % 20 == 0:
             print('still looking')
 
 
