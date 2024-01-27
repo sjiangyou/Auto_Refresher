@@ -15,5 +15,7 @@ def check_keywords():
             links += 1
             print(link.get('href'))
     print(links)
+    
 
-check_keywords()
+if __name__ == '__main__':
+    check_keywords()

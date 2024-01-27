@@ -9,6 +9,7 @@ def main():
         pyautogui.keyDown('ctrl')
         pyautogui.press('r')
         pyautogui.keyUp('ctrl')
+        check_keywords()
 
 if __name__ == '__main__':
     main()
