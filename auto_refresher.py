@@ -1,6 +1,4 @@
 import time
-import pyautogui
-import os
 import webbrowser
 from scraper import check_keywords
 
