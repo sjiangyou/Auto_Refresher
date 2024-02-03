@@ -11,7 +11,7 @@ def main():
         iterations += 1
         time.sleep(0.5)
         urls_new = check_keywords()
-        if (urls_new != urls_old and not urls_old):
+        if (urls_new != urls_old and urls_old != []):
             for urls in urls_old:
                 try:
                     urls_old.index(urls)
@@ -20,6 +20,7 @@ def main():
             running = False
         if iterations % 20 == 0:
             print('still looking')
+        urls_old = urls_new
 
 
 if __name__ == '__main__':
